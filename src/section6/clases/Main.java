@@ -21,5 +21,18 @@ public class Main {
         System.out.println("multiply = "+calculator.getMultiplicationResult());
         System.out.println("divide = "+calculator.getDivisionResult());
 
+        System.out.println("------------------> person class ");
+        Person person = new Person();
+        person.setFirstName(" ");
+        person.setLastName(" ");
+        System.out.println("fullName = " + person.getFullName());
+        System.out.println("teen = " + person.isTeen());
+        person.setFirstName("John");
+        person.setAge(18);
+        System.out.println("fullName = " +person.getFullName());
+        System.out.println("teen =" + person.isTeen());
+        person.setLastName("smith");
+        System.out.println("fullName = "+ person.getFullName());
+
     }
 }

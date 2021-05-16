@@ -1,5 +1,7 @@
 package section6.clases;
 
+import section6.constructor.ClassChallenge;
+
 public class Main {
     public static void main(String[] args) {
 // test for git
@@ -33,6 +35,15 @@ public class Main {
         System.out.println("teen =" + person.isTeen());
         person.setLastName("smith");
         System.out.println("fullName = "+ person.getFullName());
+
+        System.out.println("--------------> challenge");
+
+        ClassChallenge bobsAccount = new ClassChallenge(9000, 90, "bobita", "test@email.com", 00765543);
+        bobsAccount.withdraw(100);
+        bobsAccount.deposit(50);
+        bobsAccount.deposit(51);
+        bobsAccount.withdraw(100);
+        bobsAccount.withdraw(300);
 
     }
 }

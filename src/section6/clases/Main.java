@@ -1,6 +1,9 @@
 package section6.clases;
 
 import section6.constructor.ClassChallenge;
+import section6.constructor.ConstructorChallenge;
+
+import java.sql.SQLOutput;
 
 public class Main {
     public static void main(String[] args) {
@@ -44,6 +47,19 @@ public class Main {
         bobsAccount.deposit(51);
         bobsAccount.withdraw(100);
         bobsAccount.withdraw(300);
+
+        ClassChallenge gigiAccount = new ClassChallenge("marinica", "gigiDuru@test.com",900807);
+
+        System.out.println("constructor challenge ------------->");
+        ConstructorChallenge object1 = new ConstructorChallenge();
+        System.out.println(object1.getName());
+
+        ConstructorChallenge object2 = new ConstructorChallenge("bob",2500);
+        System.out.println(object2.getName());
+
+        ConstructorChallenge object3 = new ConstructorChallenge("tim",100, "tim@email.com");
+        System.out.println(object3.getName());
+        System.out.println(object3.getEmail());
 
     }
 }

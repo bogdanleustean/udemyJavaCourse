@@ -22,8 +22,12 @@ public class ClassChallenge {
        System.out.println("-> construnctor cu parama <-");
    }
 
-
-
+    public ClassChallenge(String customerName, String email, int phoneNumber) {
+       this(999, 390, "marinica","test@test.ro", 12345679);
+        this.customerName = customerName;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+    }
 
     public int getAccountNumber() {
         return accountNumber;

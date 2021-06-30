@@ -17,7 +17,7 @@ public class PC {
     }
 
     public void drawLogo(){
-        //fancy grapichs
+        //fancy graphics
         monitor.drawPixelAt(1200,50,"yellow");
     }
 

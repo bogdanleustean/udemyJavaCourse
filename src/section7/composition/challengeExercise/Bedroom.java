@@ -22,7 +22,7 @@ public class Bedroom {
     }
 
     public void makeBed(){
-        System.out.println("bedroomClass -> making bed");
+        System.out.println("Bedroom -> Making bed | ");
         bed.make();
     }
 
